@@ -16,7 +16,7 @@
 		044D3F551D3993E000332A8C /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F4C1D3993E000332A8C /* Dependency.swift */; };
 		044D3F561D3993E000332A8C /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F4D1D3993E000332A8C /* Dispatch.swift */; };
 		044D3F571D3993E000332A8C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F4E1D3993E000332A8C /* Errors.swift */; };
-		044D3F581D3993E000332A8C /* GroupJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F4F1D3993E000332A8C /* GroupJob.swift */; };
+		044D3F581D3993E000332A8C /* Job+Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F4F1D3993E000332A8C /* Job+Group.swift */; };
 		044D3F5C1D3993EE00332A8C /* JobContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F591D3993EE00332A8C /* JobContext.swift */; };
 		044D3F5D1D3993EE00332A8C /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F5A1D3993EE00332A8C /* JobQueue.swift */; };
 		044D3F5E1D3993EE00332A8C /* JobQueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F5B1D3993EE00332A8C /* JobQueueType.swift */; };
@@ -41,7 +41,7 @@
 		044D3F4C1D3993E000332A8C /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 		044D3F4D1D3993E000332A8C /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		044D3F4E1D3993E000332A8C /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		044D3F4F1D3993E000332A8C /* GroupJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupJob.swift; sourceTree = "<group>"; };
+		044D3F4F1D3993E000332A8C /* Job+Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+Group.swift"; sourceTree = "<group>"; };
 		044D3F591D3993EE00332A8C /* JobContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobContext.swift; sourceTree = "<group>"; };
 		044D3F5A1D3993EE00332A8C /* JobQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobQueue.swift; sourceTree = "<group>"; };
 		044D3F5B1D3993EE00332A8C /* JobQueueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobQueueType.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			children = (
 				044D3F471D3993E000332A8C /* Job.swift */,
 				044D3F4B1D3993E000332A8C /* Delay.swift */,
-				044D3F4F1D3993E000332A8C /* GroupJob.swift */,
+				044D3F4F1D3993E000332A8C /* Job+Group.swift */,
 			);
 			name = JobTypes;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 				044D3F661D3993F600332A8C /* JobState.swift in Sources */,
 				044D3F5C1D3993EE00332A8C /* JobContext.swift in Sources */,
 				044D3F6B1D3993F600332A8C /* Ticket.swift in Sources */,
-				044D3F581D3993E000332A8C /* GroupJob.swift in Sources */,
+				044D3F581D3993E000332A8C /* Job+Group.swift in Sources */,
 				044D3F5D1D3993EE00332A8C /* JobQueue.swift in Sources */,
 				044D3F561D3993E000332A8C /* Dispatch.swift in Sources */,
 				044D3F5E1D3993EE00332A8C /* JobQueueType.swift in Sources */,
