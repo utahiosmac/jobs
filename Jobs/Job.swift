@@ -1,11 +1,11 @@
 //
-//  BlockJob.swift
+//  Job.swift
 //  Jobs
 //
 
 import Foundation
 
-public struct BlockJob: JobType {
+public struct Job: JobType {
     public var priority = DispatchQoS.default
     public let block: JobBlock
     public var name: String? = nil
