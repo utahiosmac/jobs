@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		044D3F411D39938800332A8C /* Jobs.h in Headers */ = {isa = PBXBuildFile; fileRef = 044D3F3F1D39938800332A8C /* Jobs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		044D3F501D3993E000332A8C /* BlockJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F471D3993E000332A8C /* BlockJob.swift */; };
+		044D3F501D3993E000332A8C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F471D3993E000332A8C /* Job.swift */; };
 		044D3F511D3993E000332A8C /* BlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F481D3993E000332A8C /* BlockObserver.swift */; };
 		044D3F521D3993E000332A8C /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F491D3993E000332A8C /* Composite.swift */; };
 		044D3F531D3993E000332A8C /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F4A1D3993E000332A8C /* Condition.swift */; };
@@ -33,7 +33,7 @@
 		044D3F3C1D39938800332A8C /* Jobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D3F3F1D39938800332A8C /* Jobs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jobs.h; sourceTree = "<group>"; };
 		044D3F401D39938800332A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		044D3F471D3993E000332A8C /* BlockJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockJob.swift; sourceTree = "<group>"; };
+		044D3F471D3993E000332A8C /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		044D3F481D3993E000332A8C /* BlockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockObserver.swift; sourceTree = "<group>"; };
 		044D3F491D3993E000332A8C /* Composite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 		044D3F4A1D3993E000332A8C /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		04EBCAD11D42444A00D4C3A7 /* JobTypes */ = {
 			isa = PBXGroup;
 			children = (
-				044D3F471D3993E000332A8C /* BlockJob.swift */,
+				044D3F471D3993E000332A8C /* Job.swift */,
 				044D3F4B1D3993E000332A8C /* Delay.swift */,
 				044D3F4F1D3993E000332A8C /* GroupJob.swift */,
 			);
@@ -233,7 +233,7 @@
 			files = (
 				044D3F551D3993E000332A8C /* Dependency.swift in Sources */,
 				044D3F681D3993F600332A8C /* Lock.swift in Sources */,
-				044D3F501D3993E000332A8C /* BlockJob.swift in Sources */,
+				044D3F501D3993E000332A8C /* Job.swift in Sources */,
 				044D3F531D3993E000332A8C /* Condition.swift in Sources */,
 				044D3F671D3993F600332A8C /* JobType.swift in Sources */,
 				044D3F521D3993E000332A8C /* Composite.swift in Sources */,
