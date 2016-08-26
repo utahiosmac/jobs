@@ -12,7 +12,7 @@ public final class Depend: Condition {
         self.dependency = job
     }
     
-    public func evaluate(ticket: Ticket, completion: (NSError?) -> Void) {
+    public func evaluate(ticket: Ticket, completion: @escaping (NSError?) -> Void) {
         dependency.onFinish { _ in
             completion(nil)
         }

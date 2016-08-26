@@ -9,7 +9,7 @@ internal final class JobState {
     internal let enqueuedDate = Date()
     internal let job: JobType
     
-    private enum State {
+    fileprivate enum State {
         case idle
         case evaluating
         case executing
@@ -21,17 +21,17 @@ internal final class JobState {
         }
     }
     
-    private let lock = Lock()
+    fileprivate let lock = NSLock()
     
     // underscored properties must only be accessed within the lock
-    private var _state = State.idle
-    private var _cancelled = false
-    private var _observers = [Observer]()
+    fileprivate var _state = State.idle
+    fileprivate var _cancelled = false
+    fileprivate var _observers = [Observer]()
     
     internal var jobProductionHandler: (JobType) -> Ticket
-    internal private(set) var cancellationError: NSError?
+    internal fileprivate(set) var cancellationError: NSError?
     
-    init(job: JobType, productionHandler: (JobType) -> Ticket) {
+    init(job: JobType, productionHandler: @escaping (JobType) -> Ticket) {
         self.job = job
         self.jobProductionHandler = productionHandler
         add(observers: job.observers)
@@ -51,7 +51,7 @@ internal final class JobState {
 
 extension JobState { /* Actions */
     
-    internal func evaluateConditions(completion: ([NSError]) -> Void) {
+    internal func evaluateConditions(completion: @escaping ([NSError]) -> Void) {
         let shouldEvaluate = lock.withCriticalScope { _ -> Bool in
             if _state == .idle {
                 _state = .evaluating
@@ -67,7 +67,7 @@ extension JobState { /* Actions */
         let group = DispatchGroup()
         var results = Array<NSError?>(repeating: nil, count: job.conditions.count)
         
-        let q = DispatchQueue(label: "JobConditions", attributes: .serial, target: nil)
+        let q = DispatchQueue(label: "JobConditions", attributes: [], target: nil)
         let ticket = self.ticket()
         for (index, condition) in job.conditions.enumerated() {
             group.enter()

@@ -7,7 +7,7 @@ import Foundation
 
 public extension Job {
     
-    public static func group(setup: (JobQueueType) -> Void) -> Job {
+    public static func group(setup: @escaping (JobQueueType) -> Void) -> Job {
         return Job(block: { context in
             let q = GroupJobQueue()
             q.suspended = true
@@ -31,13 +31,13 @@ private class GroupJobQueue: JobQueueType {
         set { wrappedQueue.suspended = newValue }
     }
     
-    private func enqueue(job: JobType) -> Ticket {
+    fileprivate func enqueue(job: JobType) -> Ticket {
         let ticket = wrappedQueue.enqueue(job: job)
         ticket.add(observer: GroupJobObserver(group: group))
         return ticket
     }
     
-    private func onCompletion(completion: () -> Void) {
+    fileprivate func onCompletion(completion: @escaping () -> Void) {
         group.notify(queue: DispatchQueue.global(), execute: completion)
     }
     
@@ -51,12 +51,12 @@ private struct GroupJobObserver: Observer {
         group.enter()
     }
     
-    private func jobDidStart(job: Ticket) { }
-    private func jobDidCancel(job: Ticket) { }
-    private func job(job: Ticket, didFinishWithErrors errors: [NSError]) {
+    fileprivate func jobDidStart(job: Ticket) { }
+    fileprivate func jobDidCancel(job: Ticket) { }
+    fileprivate func job(job: Ticket, didFinishWithErrors errors: [NSError]) {
         group.leave()
     }
-    private func job(job: Ticket, didProduce newJob: Ticket) {
+    fileprivate func job(job: Ticket, didProduce newJob: Ticket) {
         newJob.add(observer: GroupJobObserver(group: group))
     }
 }

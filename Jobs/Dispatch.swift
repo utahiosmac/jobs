@@ -7,9 +7,9 @@ import Foundation
 
 extension DispatchQueue {
     
-    internal func after(timeInterval: TimeInterval, execute: () -> Void) {
-        let when = DispatchTime.now() + DispatchTimeInterval.nanoseconds(Int(UInt64(timeInterval) * NSEC_PER_SEC))
-        after(when: when, execute: execute)
+    internal func after(timeInterval: TimeInterval, execute: @escaping () -> Void) {
+        let when = DispatchTime.now() + timeInterval
+        asyncAfter(deadline: when, execute: execute)
     }
     
 }

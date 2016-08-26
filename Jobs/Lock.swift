@@ -5,9 +5,9 @@
 
 import Foundation
 
-internal extension Locking {
+internal extension NSLocking {
     
-    func withCriticalScope<T>(block: @noescape () -> T) -> T {
+    func withCriticalScope<T>(block: () -> T) -> T {
         lock()
         let value = block()
         unlock()

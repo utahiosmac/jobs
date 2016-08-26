@@ -9,8 +9,8 @@ public struct MutuallyExclusive<T>: Condition {
     
     public init() { }
     
-    public func evaluate(ticket: Ticket, completion: (NSError?) -> Void) {
-        let exclusivityClass = "\(self.dynamicType)"
+    public func evaluate(ticket: Ticket, completion: @escaping (NSError?) -> Void) {
+        let exclusivityClass = "\(type(of: self))"
         MutualExclusivityController.shared.add(ticket: ticket, for: exclusivityClass, completion: { completion(nil) })
     }
     
@@ -20,10 +20,10 @@ private class MutualExclusivityController {
     
     static let shared = MutualExclusivityController()
     
-    private let lock = Lock()
+    private let lock = NSLock()
     private var tickets = Dictionary<String, [Ticket]>()
     
-    func add(ticket: Ticket, for exclusivityClass: String, completion: () -> Void) {
+    func add(ticket: Ticket, for exclusivityClass: String, completion: @escaping () -> Void) {
         var mutableTicket = ticket
         var previousTicket: Ticket?
         lock.withCriticalScope {
