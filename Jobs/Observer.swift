@@ -32,19 +32,19 @@ public protocol Observable {
 
 extension Observable {
     
-    public mutating func onStart(handler: () -> Void) {
+    public mutating func onStart(handler: @escaping () -> Void) {
         add(observer: BlockObserver(onStart: handler))
     }
     
-    public mutating func onCancel(handler: () -> Void) {
+    public mutating func onCancel(handler: @escaping () -> Void) {
         add(observer: BlockObserver(onCancel: handler))
     }
     
-    public mutating func onFinish(handler: ([NSError]) -> Void) {
+    public mutating func onFinish(handler: @escaping ([NSError]) -> Void) {
         add(observer: BlockObserver(onFinish: handler))
     }
     
-    public mutating func onProduce(handler: (Ticket) -> Void) {
+    public mutating func onProduce(handler: @escaping (Ticket) -> Void) {
         add(observer: BlockObserver(onProduce: handler))
     }
     

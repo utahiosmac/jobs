@@ -23,7 +23,7 @@ public struct Job: JobType {
         self.block = block
     }
     
-    public init(mainQueueBlock: () -> Void) {
+    public init(mainQueueBlock: @escaping () -> Void) {
         self.block = { context in
             DispatchQueue.main.async {
                 mainQueueBlock()

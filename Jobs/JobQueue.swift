@@ -11,7 +11,7 @@ public final class JobQueue: JobQueueType {
     private let executionQueue: DispatchQueue
     
     public init(targeting: DispatchQueue? = nil) {
-        executionQueue = DispatchQueue(label: "JobQueue", attributes: .serial, target: targeting)
+        executionQueue = DispatchQueue(label: "JobQueue", attributes: [], target: targeting)
     }
     
     private var _suspended = false

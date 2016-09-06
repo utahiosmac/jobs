@@ -9,7 +9,7 @@ public struct Ticket: Hashable, Observable {
     public var enqueuedDate: Date { return state.enqueuedDate }
     public var job: JobType { return state.job }
     
-    private let state: JobState
+    fileprivate let state: JobState
     
     internal init(state: JobState) {
         self.state = state

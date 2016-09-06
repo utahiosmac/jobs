@@ -22,7 +22,7 @@ public enum JobError: Int {
 extension NSError {
     
     public convenience init(jobError: JobError, description: String? = nil, extra: Dictionary<NSObject, AnyObject> = [:]) {
-        var info = extra
+        var info: [AnyHashable : Any] = extra
         info[NSLocalizedDescriptionKey] = description ?? jobError.localizedDescription
         
         self.init(domain: JobErrorDomain, code: jobError.rawValue, userInfo: info)

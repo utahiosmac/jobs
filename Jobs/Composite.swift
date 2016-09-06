@@ -18,9 +18,9 @@ public struct Composite: Condition {
         self.conditions = conditions
     }
     
-    public func evaluate(ticket: Ticket, completion: (NSError?) -> Void) {
+    public func evaluate(ticket: Ticket, completion: @escaping (NSError?) -> Void) {
         let group = DispatchGroup()
-        let queue = DispatchQueue(label: "CompositeCondition", attributes: .serial, target: DispatchQueue.global())
+        let queue = DispatchQueue(label: "CompositeCondition", attributes: [], target: DispatchQueue.global())
         
         let conditionCount = conditions.count
         
