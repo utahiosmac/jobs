@@ -11,7 +11,7 @@ public struct BlockObserver: Observer {
     internal let onFinish: (([NSError]) -> Void)?
     internal let onProduce: ((Ticket) -> Void)?
     
-    public init(onStart: (@escaping () -> Void)? = nil, onCancel: (@escaping () -> Void)? = nil, onFinish: (@escaping ([NSError]) -> Void)? = nil, onProduce: (@escaping (Ticket) -> Void)? = nil) {
+    public init(onStart: (() -> Void)? = nil, onCancel: (() -> Void)? = nil, onFinish: (([NSError]) -> Void)? = nil, onProduce: ((Ticket) -> Void)? = nil) {
         self.onStart = onStart
         self.onCancel = onCancel
         self.onFinish = onFinish

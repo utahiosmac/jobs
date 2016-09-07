@@ -19,7 +19,7 @@ public struct Job: JobType {
         observers.append(observer)
     }
     
-    public init(block: JobBlock) {
+    public init(block: @escaping JobBlock) {
         self.block = block
     }
     
