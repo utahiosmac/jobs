@@ -21,37 +21,37 @@
 		044D3F5D1D3993EE00332A8C /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F5A1D3993EE00332A8C /* JobQueue.swift */; };
 		044D3F5E1D3993EE00332A8C /* JobQueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F5B1D3993EE00332A8C /* JobQueueType.swift */; };
 		044D3F661D3993F600332A8C /* JobState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F5F1D3993F600332A8C /* JobState.swift */; };
-		044D3F671D3993F600332A8C /* JobType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F601D3993F600332A8C /* JobType.swift */; };
 		044D3F681D3993F600332A8C /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F611D3993F600332A8C /* Lock.swift */; };
 		044D3F691D3993F600332A8C /* MutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F621D3993F600332A8C /* MutuallyExclusive.swift */; };
 		044D3F6A1D3993F600332A8C /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F631D3993F600332A8C /* Observer.swift */; };
 		044D3F6B1D3993F600332A8C /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F641D3993F600332A8C /* Ticket.swift */; };
 		044D3F6C1D3993F600332A8C /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D3F651D3993F600332A8C /* Timeout.swift */; };
+		6183573B1E03921700A52FDC /* JobType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6183573A1E03921700A52FDC /* JobType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044D3F3C1D39938800332A8C /* Jobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		044D3F3F1D39938800332A8C /* Jobs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jobs.h; sourceTree = "<group>"; };
-		044D3F401D39938800332A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044D3F3F1D39938800332A8C /* Jobs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Jobs.h; path = ../Jobs/Jobs.h; sourceTree = "<group>"; };
+		044D3F401D39938800332A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Jobs/Info.plist; sourceTree = "<group>"; };
 		044D3F471D3993E000332A8C /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		044D3F481D3993E000332A8C /* BlockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockObserver.swift; sourceTree = "<group>"; };
 		044D3F491D3993E000332A8C /* Composite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
-		044D3F4A1D3993E000332A8C /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		044D3F4A1D3993E000332A8C /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = ../Sources/Condition.swift; sourceTree = "<group>"; };
 		044D3F4B1D3993E000332A8C /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		044D3F4C1D3993E000332A8C /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 		044D3F4D1D3993E000332A8C /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		044D3F4E1D3993E000332A8C /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		044D3F4F1D3993E000332A8C /* Job+Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+Group.swift"; sourceTree = "<group>"; };
-		044D3F591D3993EE00332A8C /* JobContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobContext.swift; sourceTree = "<group>"; };
-		044D3F5A1D3993EE00332A8C /* JobQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobQueue.swift; sourceTree = "<group>"; };
-		044D3F5B1D3993EE00332A8C /* JobQueueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobQueueType.swift; sourceTree = "<group>"; };
-		044D3F5F1D3993F600332A8C /* JobState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobState.swift; sourceTree = "<group>"; };
-		044D3F601D3993F600332A8C /* JobType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobType.swift; sourceTree = "<group>"; };
+		044D3F591D3993EE00332A8C /* JobContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobContext.swift; path = ../Sources/JobContext.swift; sourceTree = "<group>"; };
+		044D3F5A1D3993EE00332A8C /* JobQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobQueue.swift; path = ../Sources/JobQueue.swift; sourceTree = "<group>"; };
+		044D3F5B1D3993EE00332A8C /* JobQueueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobQueueType.swift; path = ../Sources/JobQueueType.swift; sourceTree = "<group>"; };
+		044D3F5F1D3993F600332A8C /* JobState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobState.swift; path = ../Sources/JobState.swift; sourceTree = "<group>"; };
 		044D3F611D3993F600332A8C /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 		044D3F621D3993F600332A8C /* MutuallyExclusive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutuallyExclusive.swift; sourceTree = "<group>"; };
-		044D3F631D3993F600332A8C /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
-		044D3F641D3993F600332A8C /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		044D3F631D3993F600332A8C /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observer.swift; path = ../Sources/Observer.swift; sourceTree = "<group>"; };
+		044D3F641D3993F600332A8C /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ticket.swift; path = ../Sources/Ticket.swift; sourceTree = "<group>"; };
 		044D3F651D3993F600332A8C /* Timeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeout.swift; sourceTree = "<group>"; };
+		6183573A1E03921700A52FDC /* JobType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobType.swift; path = Sources/JobType.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		044D3F3E1D39938800332A8C /* Jobs */ = {
 			isa = PBXGroup;
 			children = (
-				044D3F601D3993F600332A8C /* JobType.swift */,
+				6183573A1E03921700A52FDC /* JobType.swift */,
 				044D3F5B1D3993EE00332A8C /* JobQueueType.swift */,
 				044D3F5A1D3993EE00332A8C /* JobQueue.swift */,
 				044D3F591D3993EE00332A8C /* JobContext.swift */,
@@ -98,7 +98,8 @@
 				04EBCAD31D4244C500D4C3A7 /* Helpers */,
 				04EBCAD21D42448C00D4C3A7 /* Supporting Files */,
 			);
-			path = Jobs;
+			name = Jobs;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		04EBCACF1D4243FD00D4C3A7 /* Conditions */ = {
@@ -187,7 +188,7 @@
 		044D3F331D39938800332A8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Utah Developers";
 				TargetAttributes = {
 					044D3F3B1D39938800332A8C = {
@@ -235,7 +236,6 @@
 				044D3F681D3993F600332A8C /* Lock.swift in Sources */,
 				044D3F501D3993E000332A8C /* Job.swift in Sources */,
 				044D3F531D3993E000332A8C /* Condition.swift in Sources */,
-				044D3F671D3993F600332A8C /* JobType.swift in Sources */,
 				044D3F521D3993E000332A8C /* Composite.swift in Sources */,
 				044D3F6A1D3993F600332A8C /* Observer.swift in Sources */,
 				044D3F571D3993E000332A8C /* Errors.swift in Sources */,
@@ -244,6 +244,7 @@
 				044D3F6C1D3993F600332A8C /* Timeout.swift in Sources */,
 				044D3F541D3993E000332A8C /* Delay.swift in Sources */,
 				044D3F661D3993F600332A8C /* JobState.swift in Sources */,
+				6183573B1E03921700A52FDC /* JobType.swift in Sources */,
 				044D3F5C1D3993EE00332A8C /* JobContext.swift in Sources */,
 				044D3F6B1D3993F600332A8C /* Ticket.swift in Sources */,
 				044D3F581D3993E000332A8C /* Job+Group.swift in Sources */,
@@ -271,8 +272,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -322,8 +325,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -356,6 +361,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -368,7 +374,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -377,6 +383,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -388,7 +395,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos macosx";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
